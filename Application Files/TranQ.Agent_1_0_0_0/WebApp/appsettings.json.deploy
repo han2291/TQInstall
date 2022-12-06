@@ -1,0 +1,29 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=TRANQUsers;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "AccountConnection": "Server=(localdb)\\mssqllocaldb;Database=TRANQ;Trusted_Connection=True;MultipleActiveResultSets=true"
+
+  },
+  "DetailedErrors": true,
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information",
+      "Microsoft.AspNetCore.SignalR": "Debug",
+      "Microsoft.AspNetCore.Http.Connections": "Debug"
+    },
+    "File": {
+      "Path": "c:\\Log\\TranqWeb.log",
+      "Append": "True"
+    }
+  },
+  "IdentityServer": {
+    "Clients": {
+      "TRANQ.Client": {
+        "Profile": "IdentityServerSPA"
+      }
+    }
+  },
+  "AllowedHosts": "*"
+}
