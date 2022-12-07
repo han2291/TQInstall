@@ -1,0 +1,31 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  
+"Kestrel" : {
+  "EndpointDefaults": {
+    "Protocols": "Http1"
+    } 
+  },
+  "HttpServer": {
+    "Endpoints": {
+      "Http": {
+        "Host": "*",
+        "Port": 5003,
+        "Scheme": "http"
+      },
+      "Https": {
+        "Host": "localhost",
+        "Port": 5002,
+        "Scheme": "https",
+        "StoreName": "My",
+        "StoreLocation": "CurrentUser"
+      }
+    }
+  }
+}
